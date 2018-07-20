@@ -1,0 +1,17 @@
+a {
+    color : black;
+    text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+li {
+   border: solid 1px green;
+   border-radius: 12px;
+   width: 200px;
+   font-size: 20px;
+   padding: 10px;
+   margin: 10px;
+}
