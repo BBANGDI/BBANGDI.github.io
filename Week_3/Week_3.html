@@ -1,62 +1,73 @@
 <!doctype html>
 <html>
 <head>
-<title>WEB1 - html</title>
-  <meta charset="utf-8">
+  <title>HowTo Exam Week 3- CSS</title>
+  <style>
+  body{
+    margin:0;
+  }
+  a {
+    color:black;
+    text-decoration: none;
+  }
+  h1 {
+    font-size:45px;
+    text-align: center;
+    border-bottom:1px solid gray;
+    margin:0;
+    padding:20px;
+  }
+  ol{
+    border-right:1px solid gray;
+    width:150px;
+    margin:0;
+    padding:20px;
+  }
+</style>
 </head>
 <body>
-  <h1><a href="index.html">WEB</a></h1>
-  <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-  </ol>
-  <h2>HTML</h2>
-  <p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Oyf5o1zWMd0" frameborder="0" allowfullscreen></iframe>
-  </p>
 
-  <p><a href="https://www.w3.org/TR/html5/" target="_blank" title="html5 specification"> Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.
-    Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
-  <p style="margin-top:45px;"><img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png"></p>
-  <p style="margin-top:45px;">   HTML elements are the building blocks of HTML pages.
-    With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page.
-    It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items.
-    HTML elements are delineated by tags, written using angle brackets.
-  </p>
+<h1><a href="index.html">여러분들을 나타내는 홈페이지를 만들어봅시다.</a></h1>
 
-  <!-- <p>
-    <div id="disqus_thread"></div>
-    <script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
+<ol>
+  <li><a href="1.html">나이</a></li>
+  <li><a href="2.html">취미</a></li>
+  <li><a href="3.html">좋아하는 음식</a></li>
+</ol>
+<h2>HTML</h2>
+<p><img width="300" height="150" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png"></p>
 
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){ // 채팅기능
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/57a72994c11fe69b0bd8fa90/default';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
+<p>
+  이쪽에 여러가지 설명을 써주고 싶지만, 예시로 내용을 작성해두면 이 내용만 따라서 칠꺼 같아서 자유롭게 내용은 채워볼 수 있기를 바랍니다.<br>
+  <strong>진행을 하면서 <u>절대</u> 이 예시 내용</strong>처럼 쓰지말고 홈페이지를 만들게 된다면 어떤 내용을 써서 꾸며볼지 한번 생각해보는 시간을
+  가질 수 있었으면 좋겠습니다.<br> 일기도 좋고, 자기소개를 하는 페이지도 좋고, 앞으로 공부하고 내용을 적어보는 것도 좋습니다. 자유롭게 꾸며보세요.
+</p>
 
-    (function() { // 댓글 기능 DON'T EDIT BELOW THIS LINE
-      var d = document, s = d.createElement('script');
-      s.src = 'https://web1-2.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/Oyf5o1zWMd0" frameborder="0" allowfullscreen></iframe></p>
 
-  </p> -->
+<p>
+  3주차에서는 기본적으로 CSS가 무엇인지 기초적인 부분을 다루어 볼 것입니다.<br>
+  CSS를 사용하게 되면 어떠한 부분에서 편리해지는지 얼마나 더 빠르고 간편하게 웹 문서를 꾸밀 수 있는지 경험해보았으면 좋겠습니다.<br>
+  어떻게 하면 좀 더 이쁘게, 좀 더 잘 알아볼 수 있을까요? <br>
+  박스 모델을 이용하여 차곡 차곡 정리하는 방법을 익혀봅시다.<br>
+</p>
+
+<!--Start of Tawk.to Script
+
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/57a72994c11fe69b0bd8fa90/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+
+End of Tawk.to Script-->
+
+
 </body>
 </html>
