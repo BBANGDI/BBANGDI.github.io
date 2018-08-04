@@ -7,11 +7,50 @@ a:hover {
    text-decoration: underline;
 }
 
-li {
+h1 {
+  text-align: center;
+}
+
+.menu>ul>li {
    border: solid 1px green;
    border-radius: 12px;
    width: 200px;
    font-size: 20px;
    padding: 10px;
    margin: 10px;
+}
+
+.menu #example {
+  cursor:pointer;
+}
+
+.menu .hide{
+  display:none;
+}
+
+.mooc, .quiz, .game {
+  float:left;
+  width: 33%;
+}
+
+.mento {
+  border: 2px solid green;
+  margin-top: 15px;
+  float: left;
+  height: 230px;
+  width: 18%;
+  margin-left: 1%;
+  text-align: center;
+}
+
+li{
+  margin-top: 10px;
+}
+
+.after-box {
+  clear: left;
+}
+
+#footer {
+    background:#ccc;
 }
